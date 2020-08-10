@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTV_ID"
+        android:text="FM Receiver"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/image_ID"
+        android:layout_below="@id/welcomeTV_ID"
+        android:src="@drawable/cooley50transparent"/>
+
+    <View
+        android:id="@+id/horizontalSeparator_ID"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/image_ID"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showChannelTV_ID"
+        android:layout_below="@id/image_ID"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+
+    <Button
+        android:id="@+id/powerBTN_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/showChannelTV_ID"
+        android:text="Power FM"
+        android:textAllCaps="false"/>
+
+    <EditText
+        android:id="@+id/frequencyET_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/powerBTN_ID"
+        android:layout_toStartOf="@+id/frequencyTuneBTN_ID"
+        android:gravity="center"
+        android:hint="Frequency in MHz: "
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/frequencyTuneBTN_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/powerBTN_ID"
+        android:text="Tune"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/toggleSpeaker_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frequencyTuneBTN_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Speaker"
+        android:textAllCaps="false" />
+
+<!--
+    <NumberPicker
+        android:id="@+id/numberPicker_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/toggleSpeaker_ID" />
+-->
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FMTest</string>
+    <string name="power_toggle">Power</string>
+
+    <string name="api_key">5c3813f2-c91c-4202-bcfe-af61f37a89ac</string>
+    <string name="auth_url">http://nabportal.sms4me.com/validate</string>
+</resources>
